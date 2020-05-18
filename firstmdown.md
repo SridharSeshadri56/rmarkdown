@@ -6,8 +6,7 @@ output:
   html_document: 
     keep_md: yes
 ---
-
-
+```
 a <- 2
 b <- -3
 x <- runif(40)
@@ -15,4 +14,5 @@ sig_sq <- 0.5
 y <- a + b * x + rnorm(40,sd = sqrt(sig_sq))
 plot(x,y)
 abline(a,b)
+```
 
