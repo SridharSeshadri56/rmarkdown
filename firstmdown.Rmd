@@ -7,11 +7,14 @@ output:
     keep_md: yes
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 a <- 2
 b <- -3
 x <- runif(40)
 sig_sq <- 0.5
 y <- a + b * x + rnorm(40,sd = sqrt(sig_sq))
 plot(x,y)
-abline(a,b, col ="red")
+abline(a,b)
 
